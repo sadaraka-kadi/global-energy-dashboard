@@ -5,7 +5,7 @@ Interactive Tableau dashboard analyzing global energy transition trends.
 Multi-country, multi-year energy data by source.
 
 ### Energy Type Classification
-This dataset contains various energy types organized in a hierarchical structure. Below is a comprehensive breakdown:
+The dataset contains various energy types organized in a hierarchical structure. Below is a comprehensive breakdown:
 
 #### Top-Level Aggregations
 | Energy Type | Description |
