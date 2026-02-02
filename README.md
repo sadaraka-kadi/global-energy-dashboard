@@ -1,5 +1,4 @@
-# global-energy-dashboard
-## Project Overview
+# Global Energy Transition Dashboard
 Interactive Tableau dashboard analyzing global energy transition trends.
 
 ## Data
