@@ -3,7 +3,7 @@
 An interactive Tableau data visualization project exploring global energy consumption patterns, renewable energy growth, and the transition from fossil fuels to clean energy sources across continents and countries from 1970 to 2025.
 
 ## Data Source
-https://lowcarbonpower.org/
+https://lowcarbonpower.org/data-including-net-imports.csv
 
 **Key Metrics**:
 - Total Energy Consumption (TWh)
@@ -23,8 +23,13 @@ https://lowcarbonpower.org/
 - Energy dependency and transition metrics
 - Interactive dashboards in Tableau Public
 
-##  Visualizations
-## Visualizations Included
+## Notebooks
+1. **`01_data_preprocessing.ipynb`** – Data cleaning and preprocessing: handling missing values, type conversions, monthly aggregation, and dataset validation.
+
+2. **`02_exploratory_analysis.ipynb`** – Exploratory Data Analysis (EDA): trend visualization, seasonality detection, rolling statistics, outlier inspection, and initial assessment of autocorrelation and variance behavior.
+
+3. **`03_feature_engineering.ipynb`** – Creation of supervised learning features, including lag variables, rolling statistics, and percentage changes. Feature relevance is assessed using correlation analysis.
+## Visualizations
 
 | Sheet Name | Visualization Type | Purpose |
 |------------|-------------------|---------|
