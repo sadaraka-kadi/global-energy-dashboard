@@ -26,9 +26,10 @@ https://lowcarbonpower.org/data-including-net-imports.csv
 ## Notebooks
 1. **`01_data_preprocessing.ipynb`** – Data cleaning and preprocessing: handling missing values, type conversions, monthly aggregation, and dataset validation.
 
-2. **`02_exploratory_analysis.ipynb`** – Exploratory Data Analysis (EDA): trend visualization, seasonality detection, rolling statistics, outlier inspection, and initial assessment of autocorrelation and variance behavior.
+2. **`02_african_regions.ipynb`** – Crreating CSV containing African countries classified by ISO-codes and region.
 
-3. **`03_feature_engineering.ipynb`** – Creation of supervised learning features, including lag variables, rolling statistics, and percentage changes. Feature relevance is assessed using correlation analysis.
+3. **`03_continents.ipynb`** – Creating CSV containing countries classified by ISO-codes and continents.
+   
 ## Visualizations
 
 | Sheet Name | Visualization Type | Purpose |
