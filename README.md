@@ -18,10 +18,79 @@ https://lowcarbonpower.org/data-including-net-imports.csv
 
 **Temporal Coverage**: 1970-2025
 
-## Methods
-- Data cleaning & feature engineering in Python
-- Energy dependency and transition metrics
-- Interactive dashboards in Tableau Public
+### Energy Type Classification
+The dataset contains various energy types organized in a hierarchical structure. Below is a comprehensive breakdown:
+
+#### Top-Level Aggregations
+| Energy Type | Description |
+|-------------|-------------|
+| `total` | All energy sources combined |
+| `primary` | Primary energy from natural sources before conversion |
+| `trade` | Energy imports and exports |
+
+### Major Categories
+| Energy Type | Description |
+|-------------|-------------|
+| `fossil` | All fossil fuels (coal + oil + gas) |
+| `renewables-including-hydro` | All renewable energy sources |
+| `nuclear` | Nuclear energy |
+
+### Fossil Fuels
+| Energy Type | Description |
+|-------------|-------------|
+| `coal` | Coal energy |
+| `oil` | Petroleum and crude oil |
+| `gas` | Natural gas |
+| `unspecified-fossil-fuels` | Fossil fuels not otherwise categorized |
+
+### Renewable Energy Sources
+| Energy Type | Description |
+|-------------|-------------|
+| `hydro` | Hydroelectric power |
+| `wind` | Wind power |
+| `solar` | Total solar energy |
+| `solar-utility` | Utility-scale solar farms |
+| `solar-btm` | Behind-the-meter solar (rooftop/distributed) |
+| `wind-and-solar` | Wind and solar combined |
+| `geothermal` | Geothermal energy |
+| `biofuels` | Biomass and biofuel energy |
+| `geothermal-and-biofuels` | Geothermal and biofuels combined |
+| `unspecified-renewables` | Renewable sources not otherwise categorized |
+
+### Lowcarbon
+| Energy Type | Description |
+|-------------|-------------|
+| `lowcarbon` | Low-carbon sources (nuclear + renewables) |
+
+### Primary Energy by End Use
+Primary energy sources are further categorized by their end use:
+
+**Electricity Generation (suffix: `-e`)**
+- `primary-coal-e` - Coal used for electricity generation
+- `primary-oil-e` - Oil used for electricity generation
+- `primary-gas-e` - Natural gas used for electricity generation
+- `primary-renewables-e` - Renewables used for electricity generation
+- `primary-biofuels` - Biofuels for electricity
+
+**Non-Electricity Use (suffix: `-ne`)**
+- `primary-coal-ne` - Coal for non-electric purposes (heating, industrial processes)
+- `primary-oil-ne` - Oil for non-electric purposes (transportation, heating, petrochemicals)
+- `primary-gas-ne` - Natural gas for non-electric purposes (heating, industrial)
+- `primary-renewables-ne` - Renewables for non-electric use (biofuels for transport)
+
+### Other
+| Energy Type | Description |
+|-------------|-------------|
+| `other` | Miscellaneous energy sources not fitting other categories |
+
+### Column Definitions
+| Column | Description |
+|--------|-------------|
+| ISO | ISO 3166-1 alpha-2 country code |
+| Country | Country name |
+| Energy Category | Type/category of energy (see Energy Type Classification) |
+| Year | Year of measurement (1971-2025) |
+| Energy (TWh) | Energy production/consumption in Terawatt-hours |
 
 ## Notebooks
 1. **`01_data_preprocessing.ipynb`** – Data cleaning and preprocessing: handling missing values, type conversions, monthly aggregation, and dataset validation.
